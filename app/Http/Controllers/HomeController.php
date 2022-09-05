@@ -37,7 +37,7 @@ class HomeController extends Controller
      */
     public function update(Request $request)
     {
-        
+        $var = 0;
         //Validamos el campo iban con el metodo Validator
         $validator = Validator::make($request->all(), [
              'iban' => 'iban',
